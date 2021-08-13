@@ -2,7 +2,7 @@
 <?artifactRepository version='1.1.0'?>
 <repository name='file:/home/runner/work/spotbugs/spotbugs/eclipsePlugin/build/site/eclipse/ - artifacts' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1625180808170'/>
+    <property name='p2.timestamp' value='1628819613417'/>
     <property name='p2.compressed' value='false'/>
   </properties>
   <mappings size='3'>
@@ -11,19 +11,19 @@
     <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
   </mappings>
   <artifacts size='2'>
-    <artifact classifier='org.eclipse.update.feature' id='com.github.spotbugs.plugin.eclipse' version='4.3.0.r202107012305-0dfbd81'>
+    <artifact classifier='org.eclipse.update.feature' id='com.github.spotbugs.plugin.eclipse' version='4.4.0.r202108130152-02c21e1'>
       <properties size='4'>
         <property name='artifact.size' value='7774'/>
         <property name='download.size' value='7774'/>
-        <property name='download.md5' value='6d5c035325dcf8fb65748f8f7d1af274'/>
+        <property name='download.md5' value='9907dfff3928110cb47d469409da558e'/>
         <property name='download.contentType' value='application/zip'/>
       </properties>
     </artifact>
-    <artifact classifier='osgi.bundle' id='com.github.spotbugs.plugin.eclipse' version='4.3.0.r202107012305-0dfbd81'>
+    <artifact classifier='osgi.bundle' id='com.github.spotbugs.plugin.eclipse' version='4.4.0.r202108130152-02c21e1'>
       <properties size='3'>
-        <property name='artifact.size' value='10395503'/>
-        <property name='download.size' value='10395503'/>
-        <property name='download.md5' value='e2b9287a0eb27bb96923f40b9307c8eb'/>
+        <property name='artifact.size' value='10399200'/>
+        <property name='download.size' value='10399200'/>
+        <property name='download.md5' value='f35c5a290caa8590fe2c8576bf600e6b'/>
       </properties>
     </artifact>
   </artifacts>
