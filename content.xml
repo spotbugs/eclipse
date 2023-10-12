@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<?metadataRepository version='1.1.0'?>
+<?metadataRepository version='1.2.0'?>
 <repository name='file:/home/runner/work/spotbugs/spotbugs/eclipsePlugin/build/site/eclipse/ - metadata' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1665983134329'/>
+    <property name='p2.timestamp' value='1697074729083'/>
     <property name='p2.compressed' value='false'/>
   </properties>
   <references size='2'>
@@ -10,107 +10,15 @@
     <repository uri='https://spotbugs.github.io/eclipse/' url='https://spotbugs.github.io/eclipse/' type='0' options='0'/>
   </references>
   <units size='4'>
-    <unit id='file:/home/runner/work/spotbugs/spotbugs/eclipsePlugin/build/site/eclipse/site.xml.SpotBugs' version='1.0.0.787C5cKfH9L8k7377535G3C3A2MBLJC_B'>
-      <properties size='3'>
-        <property name='org.eclipse.equinox.p2.name' value='SpotBugs'/>
-        <property name='org.eclipse.equinox.p2.description' value='SpotBugs is a program which uses static analysis to look for bugs in Java code.'/>
-        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
-      </properties>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='file:/home/runner/work/spotbugs/spotbugs/eclipsePlugin/build/site/eclipse/site.xml.SpotBugs' version='1.0.0.787C5cKfH9L8k7377535G3C3A2MBLJC_B'/>
-      </provides>
-      <requires size='1'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.github.spotbugs.plugin.eclipse.feature.group' range='[4.7.3.r202210170504-fa9e53a,4.7.3.r202210170504-fa9e53a]'/>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
-    </unit>
-    <unit id='com.github.spotbugs.plugin.eclipse.feature.jar' version='4.7.3.r202210170504-fa9e53a'>
-      <properties size='5'>
-        <property name='org.eclipse.equinox.p2.name' value='SpotBugs'/>
-        <property name='org.eclipse.equinox.p2.description' value='SpotBugs is a program which uses static analysis to look for bugs in Java code, a spiritual successor of FindBugs.'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='https://spotbugs.github.io/'/>
-        <property name='org.eclipse.equinox.p2.provider' value='SpotBugs Project'/>
-        <property name='org.eclipse.update.feature.plugin' value='com.github.spotbugs.plugin.eclipse'/>
-      </properties>
-      <provides size='3'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='com.github.spotbugs.plugin.eclipse.feature.jar' version='4.7.3.r202210170504-fa9e53a'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
-        <provided namespace='org.eclipse.update.feature' name='com.github.spotbugs.plugin.eclipse' version='4.7.3.r202210170504-fa9e53a'/>
-      </provides>
-      <filter>
-        (org.eclipse.update.install.features=true)
-      </filter>
-      <artifacts size='1'>
-        <artifact classifier='org.eclipse.update.feature' id='com.github.spotbugs.plugin.eclipse' version='4.7.3.r202210170504-fa9e53a'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='zipped'>
-            true
-          </instruction>
-        </instructions>
-      </touchpointData>
-      <licenses size='1'>
-        <license uri='https://opensource.org/licenses/LGPL-2.1' url='https://opensource.org/licenses/LGPL-2.1'>
-          SpotBugs is free software distributed under the terms of the Lesser GNU Public License.&#xA;http://www.gnu.org/licenses/lgpl.html
-        </license>
-      </licenses>
-      <copyright>
-        (c) 2017, SpotBugs Project&#xA;      (c) 2006-2011, University of Maryland
-      </copyright>
-    </unit>
-    <unit id='com.github.spotbugs.plugin.eclipse.feature.group' version='4.7.3.r202210170504-fa9e53a' singleton='false' generation='2'>
-      <update match='providedCapabilities.exists(iu | iu.namespace == &apos;org.eclipse.equinox.p2.iu&apos; &amp;&amp; (iu.name == &apos;com.github.spotbugs.plugin.eclipse.feature.group&apos; &amp;&amp; iu.version ~= range(&apos;[0, 4.7.3.r202210170504-fa9e53a)&apos;) || iu.name == &apos;edu.umd.cs.findbugs.plugin.eclipse.feature.group&apos; &amp;&amp; iu.version ~= range(&apos;[0, 3.0.3)&apos;)))' severity='0'/>
-      <properties size='5'>
-        <property name='org.eclipse.equinox.p2.name' value='SpotBugs'/>
-        <property name='org.eclipse.equinox.p2.description' value='SpotBugs is a program which uses static analysis to look for bugs in Java code, a spiritual successor of FindBugs.'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='https://spotbugs.github.io/'/>
-        <property name='org.eclipse.equinox.p2.provider' value='SpotBugs Project'/>
-        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
-      </properties>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='com.github.spotbugs.plugin.eclipse.feature.group' version='4.7.3.r202210170504-fa9e53a'/>
-      </provides>
-      <requires size='13'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.resources' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='3.12.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.core' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.launching' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.ui' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jface.text' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.editors' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.ide' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.workbench.texteditor' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.github.spotbugs.plugin.eclipse' range='[4.7.3.r202210170504-fa9e53a,4.7.3.r202210170504-fa9e53a]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.github.spotbugs.plugin.eclipse.feature.jar' range='[4.7.3.r202210170504-fa9e53a,4.7.3.r202210170504-fa9e53a]'>
-          <filter>
-            (org.eclipse.update.install.features=true)
-          </filter>
-        </required>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
-      <touchpointData size='1'/>
-      <licenses size='1'>
-        <license uri='https://opensource.org/licenses/LGPL-2.1' url='https://opensource.org/licenses/LGPL-2.1'>
-          SpotBugs is free software distributed under the terms of the Lesser GNU Public License.&#xA;http://www.gnu.org/licenses/lgpl.html
-        </license>
-      </licenses>
-      <copyright>
-        (c) 2017, SpotBugs Project&#xA;      (c) 2006-2011, University of Maryland
-      </copyright>
-    </unit>
-    <unit id='com.github.spotbugs.plugin.eclipse' version='4.7.3.r202210170504-fa9e53a'>
-      <update id='com.github.spotbugs.plugin.eclipse' range='[0.0.0,4.7.3.r202210170504-fa9e53a)' severity='0'/>
+    <unit id='com.github.spotbugs.plugin.eclipse' version='4.8.0.r202310120137-b8c498c' generation='2'>
+      <update id='com.github.spotbugs.plugin.eclipse' range='[0.0.0,4.8.0.r202310120137-b8c498c)' severity='0'/>
       <properties size='2'>
         <property name='org.eclipse.equinox.p2.name' value='SpotBugs'/>
         <property name='org.eclipse.equinox.p2.provider' value='SpotBugs Project'/>
       </properties>
-      <provides size='87'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='com.github.spotbugs.plugin.eclipse' version='4.7.3.r202210170504-fa9e53a'/>
-        <provided namespace='osgi.bundle' name='com.github.spotbugs.plugin.eclipse' version='4.7.3.r202210170504-fa9e53a'/>
+      <provides size='88'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.github.spotbugs.plugin.eclipse' version='4.8.0.r202310120137-b8c498c'/>
+        <provided namespace='osgi.bundle' name='com.github.spotbugs.plugin.eclipse' version='4.8.0.r202310120137-b8c498c'/>
         <provided namespace='java.package' name='de.tobject.findbugs' version='0.0.0'/>
         <provided namespace='java.package' name='de.tobject.findbugs.actions' version='0.0.0'/>
         <provided namespace='java.package' name='de.tobject.findbugs.adapters' version='0.0.0'/>
@@ -195,9 +103,14 @@
         <provided namespace='java.package' name='org.objectweb.asm.tree' version='0.0.0'/>
         <provided namespace='java.package' name='org.objectweb.asm.tree.analysis' version='0.0.0'/>
         <provided namespace='java.package' name='org.objectweb.asm.util' version='0.0.0'/>
+        <provided namespace='osgi.identity' name='com.github.spotbugs.plugin.eclipse' version='4.8.0.r202310120137-b8c498c'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
       </provides>
-      <requires size='25'>
+      <requires size='26'>
         <required namespace='osgi.bundle' name='org.eclipse.ui.workbench.texteditor' range='0.0.0'/>
         <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
         <required namespace='osgi.bundle' name='org.eclipse.ant.core' range='0.0.0'/>
@@ -223,9 +136,14 @@
         <required namespace='osgi.bundle' name='org.eclipse.core.filesystem' range='0.0.0'/>
         <required namespace='osgi.bundle' name='spotbugs' range='0.0.0' optional='true' greedy='false'/>
         <required namespace='osgi.bundle' name='spotbugs-annotations' range='0.0.0' optional='true' greedy='false'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'>
+          <description>
+            com.github.spotbugs.plugin.eclipse
+          </description>
+        </requiredProperties>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='com.github.spotbugs.plugin.eclipse' version='4.7.3.r202210170504-fa9e53a'/>
+        <artifact classifier='osgi.bundle' id='com.github.spotbugs.plugin.eclipse' version='4.8.0.r202310120137-b8c498c'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
@@ -234,10 +152,102 @@
             true
           </instruction>
           <instruction key='manifest'>
-            Bundle-SymbolicName: com.github.spotbugs.plugin.eclipse; singleton:=true&#xA;Bundle-Version: 4.7.3.r202210170504-fa9e53a&#xA;
+            Bundle-SymbolicName: com.github.spotbugs.plugin.eclipse; singleton:=true&#xA;Bundle-Version: 4.8.0.r202310120137-b8c498c&#xA;
           </instruction>
         </instructions>
       </touchpointData>
+    </unit>
+    <unit id='file:/home/runner/work/spotbugs/spotbugs/eclipsePlugin/build/site/eclipse/site.xml.SpotBugs' version='1.0.0.787E-cKfH9L8k73795357359G2DJFAKJF'>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='SpotBugs'/>
+        <property name='org.eclipse.equinox.p2.description' value='SpotBugs is a program which uses static analysis to look for bugs in Java code.'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='file:/home/runner/work/spotbugs/spotbugs/eclipsePlugin/build/site/eclipse/site.xml.SpotBugs' version='1.0.0.787E-cKfH9L8k73795357359G2DJFAKJF'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.github.spotbugs.plugin.eclipse.feature.group' range='[4.8.0.r202310120137-b8c498c,4.8.0.r202310120137-b8c498c]'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+    </unit>
+    <unit id='com.github.spotbugs.plugin.eclipse.feature.group' version='4.8.0.r202310120137-b8c498c' singleton='false' generation='2'>
+      <update match='providedCapabilities.exists(iu | iu.namespace == &apos;org.eclipse.equinox.p2.iu&apos; &amp;&amp; (iu.name == &apos;com.github.spotbugs.plugin.eclipse.feature.group&apos; &amp;&amp; iu.version ~= range(&apos;[0, 4.8.0.r202310120137-b8c498c)&apos;) || iu.name == &apos;edu.umd.cs.findbugs.plugin.eclipse.feature.group&apos; &amp;&amp; iu.version ~= range(&apos;[0, 3.0.3)&apos;)))' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='SpotBugs'/>
+        <property name='org.eclipse.equinox.p2.description' value='SpotBugs is a program which uses static analysis to look for bugs in Java code, a spiritual successor of FindBugs.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='https://spotbugs.github.io/'/>
+        <property name='org.eclipse.equinox.p2.provider' value='SpotBugs Project'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.github.spotbugs.plugin.eclipse.feature.group' version='4.8.0.r202310120137-b8c498c'/>
+      </provides>
+      <requires size='13'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='3.12.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.launching' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jface.text' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.editors' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.workbench.texteditor' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.github.spotbugs.plugin.eclipse' range='[4.8.0.r202310120137-b8c498c,4.8.0.r202310120137-b8c498c]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.github.spotbugs.plugin.eclipse.feature.jar' range='[4.8.0.r202310120137-b8c498c,4.8.0.r202310120137-b8c498c]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <touchpointData size='1'/>
+      <licenses size='1'>
+        <license uri='https://opensource.org/licenses/LGPL-2.1' url='https://opensource.org/licenses/LGPL-2.1'>
+          SpotBugs is free software distributed under the terms of the Lesser GNU Public License.&#xA;http://www.gnu.org/licenses/lgpl.html
+        </license>
+      </licenses>
+      <copyright>
+        (c) 2017, SpotBugs Project&#xA;      (c) 2006-2011, University of Maryland
+      </copyright>
+    </unit>
+    <unit id='com.github.spotbugs.plugin.eclipse.feature.jar' version='4.8.0.r202310120137-b8c498c'>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='SpotBugs'/>
+        <property name='org.eclipse.equinox.p2.description' value='SpotBugs is a program which uses static analysis to look for bugs in Java code, a spiritual successor of FindBugs.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='https://spotbugs.github.io/'/>
+        <property name='org.eclipse.equinox.p2.provider' value='SpotBugs Project'/>
+        <property name='org.eclipse.update.feature.plugin' value='com.github.spotbugs.plugin.eclipse'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.github.spotbugs.plugin.eclipse.feature.jar' version='4.8.0.r202310120137-b8c498c'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='com.github.spotbugs.plugin.eclipse' version='4.8.0.r202310120137-b8c498c'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='com.github.spotbugs.plugin.eclipse' version='4.8.0.r202310120137-b8c498c'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='https://opensource.org/licenses/LGPL-2.1' url='https://opensource.org/licenses/LGPL-2.1'>
+          SpotBugs is free software distributed under the terms of the Lesser GNU Public License.&#xA;http://www.gnu.org/licenses/lgpl.html
+        </license>
+      </licenses>
+      <copyright>
+        (c) 2017, SpotBugs Project&#xA;      (c) 2006-2011, University of Maryland
+      </copyright>
     </unit>
   </units>
 </repository>
