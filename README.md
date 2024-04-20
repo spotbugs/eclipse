@@ -12,4 +12,4 @@ https://spotbugs.github.io/eclipse/
 ## How we push changes to this repository
 
 When change in [spotbugs](https://github.com/spotbugs/spotbugs) repository has been tagged with non-RC version,
-Travis CI builds Eclipse Plugin and [deploys](https://docs.travis-ci.com/user/deployment/pages/) it to the `gh-pages` branch of this repository.
+Github CI builds Eclipse Plugin and [deploys](https://github.com/spotbugs/spotbugs/blob/master/.github/workflows/release.yml) it to the `gh-pages` branch of this repository.
